@@ -165,6 +165,70 @@
 #     i += 1
 
 # nested loops
-for i in range(3):
-    for j in range(3):
-        print(i, j)   
+# for i in range(3):
+#     for j in range(3):
+#         print(i, j)   
+
+
+#data structures  list, tuple, set, dictionary
+
+# list
+# a = [1, 2, 3, 4, 5]
+# print(a)
+
+# tuple
+# b = (1, 2, 3, 4, 5)
+# print(b)
+
+# tup =()
+# print (tup)
+# tup = ('jatin', 2, 3)
+# print(tup)
+
+# set
+# c = {1, 2, 3, 4, 5}
+# print(c)
+
+# dictionary
+# d = {"name": "jatin", "age": 25}
+# print(d)
+
+#arrays
+# import array as arr
+# a = arr.array('i', [1, 2, 3, 4, 5])
+# print(a)
+
+
+#functions
+# def function_name(parameters):
+#     # function body
+#     return value
+
+# example of a function
+# def add(a, b):
+#     return a + b
+
+# result = add(5, 3)
+# print(result)
+
+# def sub(a, b):
+#     return a - b
+
+# result = sub(5, 3)
+# print(result)
+
+# result = sub(10, 4)
+# print(result)
+
+
+def evenodd(x):
+    if x % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+
+# example usage
+print(evenodd(4))
+print(evenodd(7))
+print(evenodd(10))
+print(evenodd(15))

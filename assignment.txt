@@ -1,0 +1,7 @@
+assignment:
+
+task1: check in your system if any temprory file exists which has size greater than 50mb and older than 90 day. list down all those files in the output
+
+task2: create a python script for reading the csv file and convert it to desired formats 
+
+task3: create a script for logging the activties performed on your system in last 2 hours
