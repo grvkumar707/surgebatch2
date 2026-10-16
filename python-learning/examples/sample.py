@@ -95,7 +95,54 @@
 # is = true if the operands are identical
 # is not true if the operands are not identical
 
-a = 10
-b = 10
-print("a is b:", a is b)
-print("a is not b:", a is not b)
+# a = 10
+# b = 10
+# print("a is b:", a is b)
+# print("a is not b:", a is not b)
+
+#if else statement
+# a = 4
+# if a > 5:
+#     print("a is greater than 5")
+# else:
+#     print("a is not greater than 5")
+
+#short if statement
+# a = 4
+# print("a is greater than 5") if a > 5 else print("a is not greater than 5")
+
+#if-elif-else statement
+# a = 10
+# if a > 5:
+#     print("a is greater than 5")
+# elif a == 5:
+#     print("a is equal to 5")
+# else:
+#     print("a is not greater than 5")
+
+
+#nested if statement
+# a = 15
+# if a > 5:
+#     if a < 15:
+#         print("a is greater than 5 and less than 15")
+#     else:
+#         print("a is greater than or equal to 15")
+# else:
+#     print("a is not greater than 5")
+
+#ternary operator
+# a = 4
+# result = "a is greater than 5" if a > 5 else "a is not greater than 5"
+# print(result)
+
+#match statement
+
+a = 5
+match a:
+    case 1:
+        print("a is 1")
+    case 2:
+        print("a is 2")
+    case _:
+        print("a is something else")
