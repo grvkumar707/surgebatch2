@@ -138,11 +138,33 @@
 
 #match statement
 
-a = 5
-match a:
-    case 1:
-        print("a is 1")
-    case 2:
-        print("a is 2")
-    case _:
-        print("a is something else")
+# a = 5
+# match a:
+#     case 1:
+#         print("a is 1")
+#     case 2:
+#         print("a is 2")
+#     case _:
+#         print("a is something else")
+
+
+#for loops
+
+# n = 20
+# for i in range (10, 20):
+#     print(i)
+
+# a = ["jatin", "test", "bhalla"]
+# for idx in range(len(a)):
+#     print(idx, a[idx])
+
+#while loops
+# i = 0
+# while i < 5:
+#     print(i)
+#     i += 1
+
+# nested loops
+for i in range(3):
+    for j in range(3):
+        print(i, j)   
