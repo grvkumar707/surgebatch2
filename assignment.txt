@@ -5,3 +5,13 @@ task1: check in your system if any temprory file exists which has size greater t
 task2: create a python script for reading the csv file and convert it to desired formats 
 
 task3: create a script for logging the activties performed on your system in last 2 hours
+
+
+
+assignment terraform:
+
+write the terraform modules for below resource types
+
+1. 2 ubuntu virtual machine (jenkins)
+2. acr (azure container registry) (docker)
+3. kubernetes cluster (kubernetes)

@@ -1,17 +1,19 @@
 
 
-resource "azurerm_resource_group" "dev" {
-  name     = var.resource_group_name
-  location = var.resource_group_location
-  tags = {
-    environment = var.environment
-  }
+
+module "storage_account" {
+  source = "./storageaccount"
+
+  storage_account_name    = var.storage_account_name
+  resource_group_name     = data.azurerm_resource_group.example.name
+  resource_group_location = data.azurerm_resource_group.example.location
 }
 
-resource "azurerm_storage_account" "dev" { 
-    name =  var.storage_account_name
-    resource_group_name = azurerm_resource_group.dev.name
-    location            = azurerm_resource_group.dev.location
-    account_tier        = "Standard"
-    account_replication_type = "LRS"
+
+module "resource_group" {
+  source = "./resourcegroup"
+  resource_group_name     = var.resource_group_name
+  resource_group_location = var.resource_group_location
+  environment             = var.environment
 }
+
