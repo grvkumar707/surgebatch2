@@ -1,13 +1,17 @@
-provider "azurerm" {
-  features {}
-}
+
 
 resource "azurerm_resource_group" "dev" {
-  count = 2
-  name     = "bhalla${count.index == 0 ? "dev" : "uat"}"
-  location = "East US"
+  name     = var.resource_group_name
+  location = var.resource_group_location
   tags = {
-    environment = "${count.index == 0 ? "dev" : "uat"}"
+    environment = var.environment
   }
 }
 
+resource "azurerm_storage_account" "dev" { 
+    name =  var.storage_account_name
+    resource_group_name = azurerm_resource_group.dev.name
+    location            = azurerm_resource_group.dev.location
+    account_tier        = "Standard"
+    account_replication_type = "LRS"
+}
