@@ -15,3 +15,35 @@ write the terraform modules for below resource types
 1. 2 ubuntu virtual machine (jenkins)
 2. acr (azure container registry) (docker)
 3. kubernetes cluster (kubernetes)
+
+Jenkins 23 oct
+
+question1 : 
+
+Create Folder1 and create two files inside it. Then create Folder2 and copy both files from Folder1 to Folder2. Finally, log in to your EC2 instance and verify that both folders exist and contain the respective files.
+
+question2:
+
+Create a private repository on GitHub and store the Jenkinsfile in it. Then, create a Jenkins Pipeline job and configure it to retrieve and execute the Jenkinsfile directly from the GitHub repository. also create a web hook so if any changes are made your pipeline should trigger
+
+purpose: The objective of this activity is to understand how to securely store and manage secrets and credentials in Jenkins and GitHub without hardcoding sensitive information in the pipeline.
+
+question3:
+
+Create a Jenkins Pipeline that executes Terraform code based on the action selected by the user.
+The pipeline should accept user input through a parameter and perform the corresponding action:
+Plan: If the user selects plan, the pipeline should execute terraform init and terraform plan to preview the infrastructure changes without creating or deleting resources.
+Apply: If the user selects apply, the pipeline should execute the Terraform plan and create or update the required infrastructure resources.
+Destroy: If the user selects destroy, the pipeline should delete the infrastructure resources managed by Terraform.
+
+Purpose of the Activity:
+Learn how to create a parameterized Jenkins Pipeline that accepts user input.
+Understand how to use conditional logic to execute different stages based on the selected action.
+Learn how to integrate Jenkins with Terraform to automate infrastructure provisioning and deletion.
+Understand how to securely store and manage secrets, such as cloud credentials and Terraform backend credentials, using Jenkins Credentials rather than hardcoding them in the pipeline.
+Implement appropriate safeguards, such as manual approval before applying or destroying infrastructure.
+
+
+question4: 
+
+try to setup a agent/node for jenkins and then use that node to run the pipelines
